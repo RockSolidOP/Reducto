@@ -2,3 +2,4 @@
 requirements.txt
 .env
 redacto_api_key
+parsed_data.txt
