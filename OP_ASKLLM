@@ -1,0 +1,40 @@
+A2LGENA 07/29/2025 3:33 PM
+Form 1040
+FinCEN 114 - Report of Foreign Bank and Financial Accounts, Page 1
+2024
+Name
+Fname GenInfo
+Taxpayer Identification Number: 123-65-4987
+Warning: Printed versions of the BSA E-Filing forms are not for submission and will not be processed by FinCEN
+Spaces and dashes have been removed from identification numbers and postal codes where required for FinCEN electronic filing.
+1 This report is for calendar year ended 12/31/: 2024
+Amended: [ ]
+Prior report BSA Identifier: <empty>
+Reason if filing late: <empty>
+Part I - Filer Information
+[
+    ["2", "Type of filer", "Individual"], 
+    ["3", "U.S. Taxpayer Identification Number", "123654987"], 
+    ["3a", "TIN type", "SSN/ITIN"], 
+    ["4", "Foreign identification", ""], 
+    ["", "4a Type Passport", ""], 
+    ["", "4b Number", "24131411"], 
+    ["", "4c Country of Issue", "Falkland Islands (Isla"], 
+    ["5", "Individual's date of birth", "06/06/1979"], 
+    ["6", "Last name or organization", "GenInfo"], 
+    ["name\n7 First name Fname", "", ""], 
+    ["8", "Middle initial", "\u2014"], 
+    ["8a", "Suffix", "\u2014"], 
+    ["9", "Mailing address", "apt24"], 
+    ["10", "City", "Iron Mountain"], 
+    ["11", "State", "MI Michigan"], 
+    ["12", "Zip/postal code", "42929"], 
+    ["13", "Country US", ""], 
+    ["14a Does the filer have a financial interest in 25 or more financial accounts?\n[ ]", "", ""], 
+    ["Yes", "[ ]", ""], 
+    ["No", "[x]", ""], 
+    ["14b Does the filer have signature authority over but no financial interest in 25 or more financial accounts?", "", ""], 
+    ["", "Yes If \"Yes\" enter total number of accounts", ""], 
+    ["", "No \u2611", ""]
+    
+]

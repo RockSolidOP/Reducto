@@ -1,0 +1,60 @@
+With input like this 
+
+for block in page3_blocks:
+    print(block['content']) # this prints the file i uploaded :
+
+"""A2LGENA 07/29/2025 3:33 PM
+Form 1040
+FinCEN 114 - Report of Foreign Bank and Financial Accounts, Page 1
+2024
+Name
+Fname GenInfo
+Taxpayer Identification Number: 123-65-4987
+Warning: Printed versions of the BSA E-Filing forms are not for submission and will not be processed by FinCEN
+Spaces and dashes have been removed from identification numbers and postal codes where required for FinCEN electronic filing.
+1 This report is for calendar year ended 12/31/: 2024
+Amended: [ ]
+Prior report BSA Identifier: <empty>
+Reason if filing late: <empty>
+Part I - Filer Information
+[["2", "Type of filer", "Individual"], ["3", "U.S. Taxpayer Identification Number", "123654987"], ["3a", "TIN type", "SSN/ITIN"], ["4", "Foreign identification", ""], ["", "4a Type Passport", ""], ["", "4b Number", "24131411"], ["", "4c Country of Issue", "Falkland Islands (Isla"], ["5", "Individual's date of birth", "06/06/1979"], ["6", "Last name or organization", "GenInfo"], ["name\n7 First name Fname", "", ""], ["8", "Middle initial", "\u2014"], ["8a", "Suffix", "\u2014"], ["9", "Mailing address", "apt24"], ["10", "City", "Iron Mountain"], ["11", "State", "MI Michigan"], ["12", "Zip/postal code", "42929"], ["13", "Country US", ""], ["14a Does the filer have a financial interest in 25 or more financial accounts?\n[ ]", "", ""], ["Yes", "[ ]", ""], ["No", "[x]", ""], ["14b Does the filer have signature authority over but no financial interest in 25 or more financial accounts?", "", ""], ["", "Yes If \"Yes\" enter total number of accounts", ""], ["", "No \u2611", ""]]"""
+
+
+
+Output should look like this 
+
+{
+  "Form": "1040",
+  "year": "2024",
+  "Name": "Fname GenInfo",
+  "Taxpayer Identification Number": "123-65-4987",
+  "calendar_year_ended": "12/31/2024",
+  "Amended": false,
+  "BSA_identifier": "",
+  "Reason_if_filing_late": "",
+  "Filer_Information": {
+    "Type_of_filer": "Individual",
+    "TIN": "123654987",
+    "TIN_TYPE": "SSN/ITIN",
+    "Foreign_identification": {
+      "Type": "Passport",
+      "Number": "24131411",
+      "Country_of_issue": "Falkland Islands (Isla"
+    },
+    "DOB": "06/06/1979",
+    "Last_name_or_organization": "GenInfo",
+    "First_Name": "Fname",
+    "Middle_Initial": "",
+    "Suffix": "",
+    "Mailing_address": "apt24",
+    "City": "Iron Mountain",
+    "State": "MI Michigan",
+    "zip_postal_code": "42929",
+    "Country": "US",
+    "FINANCIAL_Interest_accounts": false,
+    "Sign_Auth_no_interest": false
+  }
+}
+
+
+
